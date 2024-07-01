@@ -14,7 +14,7 @@
             <ul class="navBar">
                 <li><a href="#" type="button/html">Home</a></li>
                 <li><a href="#portfolio" type="button/html">Portfolio</a></li>
-                <li><a href="#" type="button/html">Contact</a></li>
+                <li><a href="#contact" type="button/html">Contact</a></li>
             </ul>
         </nav>
     </header>   
@@ -38,69 +38,70 @@
     <p style="text-align: center; font-size: 20px;">Below are all of the games I have been a major part of developing, displayed by genre.</p>
 
     <main>
-        <h2 name="portfolio">Portfolio: _Horror (3D)</h2>
+        <h2 id="portfolio">Portfolio: _Horror (3D)</h2>
 
         <div>
             <h3>Final Recurrence</h3>
             
-            <div id="slider">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
-                <input type="radio" name="slider" id="slide4">
-                
-                <div id="slides">
-                   <div id="overflow">
-                      <div class="inner">
-                         <div class="slide slide_1">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                         <div class="slide slide_2">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                         <div class="slide slide_3">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                         <div class="slide slide_4">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div id="bullets">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                 </div>
+            <div class="container carousel" id="carousel1">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/finalrecurrence/1.jpg" style="width:100%">
                 </div>
-                
-             </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/finalrecurrence/2.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/finalrecurrence/3.jpg" style="width:100%">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(document.getElementById('carousel1'), -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(document.getElementById('carousel1'), 1)">&#10095;</a>
+              
+                <div class="caption-container">
+                  <p id="caption1"></p>
+                </div>
+              
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="images/finalrecurrence/1.jpg" style="width:100%" onclick="currentSlide(document.getElementById('carousel1'), 1)" alt="In-game Footage">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/finalrecurrence/2.jpg" style="width:100%" onclick="currentSlide(document.getElementById('carousel1'), 2)" alt="In-game Footage">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/finalrecurrence/3.jpg" style="width:100%" onclick="currentSlide(document.getElementById('carousel1'), 3)" alt="In-game Footage">
+                  </div>
+                </div>
+              
+              </div>
+        
             <div class="gameText">
-                <p>Final Recurrence is the video game that I have developed along with
-                    a classmate, during high-school.
+                <p><span class="name">Development Period:</span> October 2021 - October 2022
                 </p>
 
                 <br>
 
-                <p>The development duration of the game was 1 year:
-                     October 2021 - October 2022
+                <p><span class="name">Short Description:</span> Final Recurrence is a first
+                    person story driven horror game that is set in Shepherd's Hills, a dark forest
+                    with a darker story, where the players' goal is to find out what really 
+                    happened behind the disappearances of multiple children.
+                </p>
+                
+                <br>
+                
+                <p><span class="name">Awards:</span> Final Recurrence won us 5th place at the national Computer Science Olympiad
+                    "Info Educație", on the Software category.
                 </p>
 
                 <br>
 
-                <p>During this 1 year, I have learned the basics of Unity, allowing me
-                     to implement some of my basic game ideas at that time.
-                </p>
-
-                <br>
-
-                <p>Final Recurrence won us 5th place at the national Computer Science Olympiad
-                     "Info Educație", on the Software category.
-                </p>
+                <a href="https://store.steampowered.com/app/2120820/Final_Recurrence/" target="_blank">Steam page</a>
             </div>
         </div>
 
@@ -109,59 +110,70 @@
         <div>
             <h3>Pixel Royale 3D</h3>
             
-            <div id="slider">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
-                <input type="radio" name="slider" id="slide4">
-                
-                <div id="slides">
-                   <div id="overflow">
-                      <div class="inner">
-                         <div class="slide slide_1">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                         <div class="slide slide_2">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                         <div class="slide slide_3">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                         <div class="slide slide_4">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div id="bullets">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                 </div>
+            <div class="container carousel" id="carousel2">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/pixelroyale3d/1.jpg" style="width:100%">
                 </div>
-                
-             </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/pixelroyale3d/2.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/pixelroyale3d/3.jpg" style="width:100%">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(document.getElementById('carousel2'), -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(document.getElementById('carousel2'), 1)">&#10095;</a>
+              
+                <div class="caption-container">
+                  <p id="caption1"></p>
+                </div>
+              
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="images/pixelroyale3d/1.jpg" style="width:100%" onclick="currentSlide(document.getElementById('carousel2'), 1)" alt="In-game Footage">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/pixelroyale3d/2.jpg" style="width:100%" onclick="currentSlide(document.getElementById('carousel2'), 2)" alt="In-game Footage">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/pixelroyale3d/3.jpg" style="width:100%" onclick="currentSlide(document.getElementById('carousel2'), 3)" alt="In-game Footage">
+                  </div>
+                </div>
+              
+            </div>
+
             <div class="gameText">
-                <p>Pixel Royale 3D is the game that I have been the lead programmer of 
-                    during: December 2022 - July 2023
+
+                <p>
+                    <span class="name">Development Period:</span>
+                    December 2022 - July 2023
                 </p>
 
                 <br>
 
-                <p>The game got published on Steam in March 2024.</p>
+                <p><span class="name">Short Description:</span>
+                    Pixel Royale 3D is a 8bit styled, first person shooter game with a lot of wonderful gameplay.
+                    It features multiple game modes, a large variety of upgradable guns, many maps, 
+                    custom player skins, 
+                </p>
 
                 <br>
 
                 <p>During the time I was involved in this project, I had the pleasure 
                     to meet amazing developers from which my real evolution began.
-                    I started refactoring my code, extracting repeating functions, 
-                    learned design patterns, optimized my code with different data 
-                    structures and so many more.
+                    I started refactoring my code, learned design patterns, 
+                    optimized my code by using different data structures and so many more.
                 </p>
+
+                <br>
+
+                <a href="https://store.steampowered.com/app/2511180/Pixel_Royale_3D/" target="_blank">Steam page</a>
             </div>
         </div>
 
@@ -169,79 +181,216 @@
 
         <h2>_Casual Survival (3D)</h2>
         
+        <div>
+          <h3>Forest's Lullaby</h3>
+          
+          <div class="container carousel" id="carousel3">
+
+              <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/forestlullaby/1.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/forestlullaby/2.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/forestlullaby/3.png" style="width:100%">
+              </div>
+            
+              <a class="prev" onclick="plusSlides(document.getElementById('carousel3'), -1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(document.getElementById('carousel3'), 1)">&#10095;</a>
+            
+                <div class="caption-container">
+                  <p id="caption1"></p>
+                </div>
+            
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="images/forestlullaby/1.png" style="width:100%" onclick="currentSlide(document.getElementById('carousel3'), 1)" alt="In-game Footage">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="images/forestlullaby/2.png" style="width:100%" onclick="currentSlide(document.getElementById('carousel3'), 2)" alt="In-game Footage">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="images/forestlullaby/3.png" style="width:100%" onclick="currentSlide(document.getElementById('carousel3'), 3)" alt="In-game Footage">
+                </div>
+              </div>
+            
+          </div>
+
+          <div class="gameText">
+
+              <p>
+                  <span class="name">Development Period:</span>
+                  January 2024 - February 2024
+              </p>
+
+              <br>
+
+              <p><span class="name">Short Description:</span>
+                  Forest Lullaby is a survival game that aims to be both realistic and casual. The 
+                  gameplay is set in a forest and it requires the player to be wary of multiple realistic mechanics:
+                  a food, hydration and warmness system, which all affect the gameplay of the player by inducing
+                  screen effects and/or debuffs, for example a freezing screen and less movement when freezing. On top of these mechanics, the players can
+                  hunt down animals with a variety of weapons, craft buildings and craft armor in order to protect themselves.
+                </p>
+
+                <br>
+
+              <p>
+                  The atmosphere and graphics of the game are made in an aesthethically pleasing way, in
+                  order to calm and relax the players. It is a first person casual survival game 
+              </p>
+
+              <br>
+          </div>
+      </div>
+
+        <h2>_Desktop Games (2D)</h2>
+
+        <div>
+          <h3>Photon PUN2 Multiplayer Shooter</h3>
+          
+          <div class="container carousel" id="carousel4">
+
+              <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/pun2shooter/1.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/pun2shooter/2.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/pun2shooter/3.png" style="width:100%">
+              </div>
+            
+              <a class="prev" onclick="plusSlides(document.getElementById('carousel4'), -1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(document.getElementById('carousel4'), 1)">&#10095;</a>
+            
+                <div class="caption-container">
+                  <p id="caption1"></p>
+                </div>
+            
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="images/pun2shooter/1.png" style="width:100%" onclick="currentSlide(document.getElementById('carousel4'), 1)" alt="In-game Footage">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="images/pun2shooter/2.png" style="width:100%" onclick="currentSlide(document.getElementById('carousel4'), 2)" alt="In-game Footage">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="images/pun2shooter/3.png" style="width:100%" onclick="currentSlide(document.getElementById('carousel4'), 3)" alt="In-game Footage">
+                </div>
+              </div>
+            
+          </div>
+
+          <div class="gameText">
+
+              <p>
+                  <span class="name">Development Period:</span>
+                  October 2023 - October 2023
+              </p>
+
+              <br>
+
+              <p><span class="name">Short Description:</span>
+                  This is my first ever multiplayer game, created using Photon's PUN2 framework.
+                  It consists of creating and joining ongoing lobbies, leaderboards and continous
+                  matches as long as there are any players in the lobby.
+              </p>  
+
+              <br>
+
+              <p>My main focus was learning network authority and not focusing on the 
+                UI / game feel.
+              </p>
+          </div>
+      </div>
+
         <h2>_Mobile Games (2D)</h2>
 
         <div>
-            <h3>Final Recurrence</h3>
+            <h3>The Blue Blob</h3>
             
-            <div id="slider">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
-                <input type="radio" name="slider" id="slide4">
-                
-                <div id="slides">
-                   <div id="overflow">
-                      <div class="inner">
-                         <div class="slide slide_1">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                         <div class="slide slide_2">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                         <div class="slide slide_3">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                         <div class="slide slide_4">
-                            <div class="slide-content">
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div id="bullets">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                 </div>
+            <div class="container carousel" id="carousel5">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/blueblob/blueblob1.png" style="width:100%">
                 </div>
-                
-             </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/blueblob/blueblob2.png" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/blueblob/blueblob2.png" style="width:100%">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(document.getElementById('carousel5'), -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(document.getElementById('carousel5'), 1)">&#10095;</a>
+              
+                  <div class="caption-container">
+                    <p id="caption1"></p>
+                  </div>
+              
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="images/blueblob/blueblob1.png" style="width:100%" onclick="currentSlide(document.getElementById('carousel5'), 1)" alt="In-game Footage">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/blueblob/blueblob2.png" style="width:100%" onclick="currentSlide(document.getElementById('carousel5'), 2)" alt="In-game Footage">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/blueblob/blueblob2.png" style="width:100%" onclick="currentSlide(document.getElementById('carousel5'), 3)" alt="In-game Footage">
+                  </div>
+                </div>
+              
+            </div>
+
             <div class="gameText">
-                <p>Final Recurrence is the video game that I have developed along with
-                    a classmate, during high-school.
+
+                <p>
+                    <span class="name">Development Period:</span>
+                    September 2023 - September 2023 
                 </p>
 
                 <br>
 
-                <p>The development duration of the game was 1 year:
-                     October 2021 - October 2022
+                <p><span class="name">Short Description:</span>
+                    The Blue Blob is a mobile 2D platformer in which the user plays in multiple 
+                    sceneries with a common goal: picking up all the coins scattered around the level
+                    without being hit multiple times by the enemies.
                 </p>
 
                 <br>
 
-                <p>During this 1 year, I have learned the basics of Unity, allowing me
-                     to implement some of my basic game ideas at that time.
-                </p>
-
-                <br>
-
-                <p>Final Recurrence won us 5th place at the national Computer Science Olympiad
-                     "Info Educație", on the Software category.
+                <p>The gathered coins can be used in order to upgrade the user's maximum health
+                  and even powerful missiles in order to counter-attack existing enemies.
                 </p>
             </div>
         </div>
-
 
     </main>
 
     <br>
 
     <footer>
+        <p id="contact">Contact</p>
+        <a href="https://www.linkedin.com/in/erwin-kirichner-b49b6b246/">LinkedIn</a>
         <p>&copy; 2024 Kirichner Erwin - Blog</p>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
